@@ -4,7 +4,7 @@ This application uses Node with an Express server and React frontend.
 
 
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. <!-- See deployment for notes on how to deploy the project on a live system. -->
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
 What things you need installed before running this application.
@@ -30,7 +30,7 @@ $ node index.js
 # * if you update the PORT make sure to update the proxy in the client package.json as well
 ```
 ## Functionality
-A single endpoint is available to get data from, this endpoint utilizes fs to read a file. The file's content is returned, then formatted, before being sent as a response to the client that made the request.
+A single endpoint is available to get hoover instruction data from. This endpoint utilizes fs to read a file. The file's content is returned, then formatted before being sent back as a repsone.
 
 read file method:
 ```
