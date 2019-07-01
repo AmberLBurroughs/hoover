@@ -1,5 +1,5 @@
-## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+# Hoover.io
+A React frontend application that displays the mighty Hoover vacuum as it ventures off into the depths of San Francisco apartments, in its endless quest to clean up dirt.
 
 ### Prerequisites
 This application requires the following installed on your computer:
