@@ -1,0 +1,73 @@
+.board {
+  margin: 65px 0 auto 0;
+  transform: rotate(270deg);
+  position: relative;
+  display: block;
+  clear: both;
+  top: 0;
+}
+
+.hoover {
+  position: absolute;
+  height: 40px;
+  z-index: 999;
+	margin: 18px;
+}
+
+.dirt {
+  position: absolute;
+  height: 30px;
+  z-index: 99;
+	margin: 25px;
+}
+
+.hover-tile {
+  border: 1px solid transparent;
+  width: 200px;
+  float: left;
+  position: absolute;
+  margin-top: -60px;
+}
+
+.results {
+ border: 1px solid transparent;
+ width: 200px;
+}
+
+.display {
+  border-bottom: 1px solid;
+  position: fixed;
+  background-color: #fff;
+  z-index: 9;
+  padding: 10px 0;
+  border-right: none;
+  color: #0A65E5;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+button {
+  background: #0A65E5;
+  border: none;
+  color: #FFF;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+.rotation-wrapper-outer {
+  display: table;
+}
+
+.rotation-wrapper-inner {
+  padding: 40% 0;
+  height: 0;
+}
