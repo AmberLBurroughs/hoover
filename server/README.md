@@ -22,14 +22,6 @@ $ node index.js
 # * if you update the PORT make sure to update the proxy in the client package.json as well
 ```
 
-## Assumptions
-The following assumptions were made:
-- The `input.txt` file is correctly formatted, where the first line contains the grid dimensions, the second line contains the starting coordinates of the Hoover, all subsequent lines are coordinates of dirt, and the last line denotes the directionst hat the Hoover takes.
-- The coordinates for the Hoover and the pieces of dirt are all within bounds.
-- If the Hoover receives a directional command that is not in `['N', 'E', 'S', 'W']`, the Hoover will stop in its tracks at the current location and error out.
-- If a direction attempts to push the Hoover outside of the grid boundaries, the Hoover will hit a wall and will stay in the same place.
-- The Hoover only needs to track the number of pieces of dirt that it has picked up, and does not need to track the locations of the dirt it has picked up.
-
 ## Functionality
 A single endpoint is used to retrieve Hoover instruction data. This endpoint utilizes `fs` to read in the `input.txt` file. The file's contents are read in and formatted before being sent back as a JSON response.
 
@@ -62,6 +54,18 @@ let hooverObj = {
     startPos: [1, 2]
 }
 ```
+
+## Changing the Hoover's cleaning instructions
+
+The server reads the `input.txt` file for a set of instructions on what to clean.
+
+Inside the `test_inputs` folder, there are several test inputs files you can play with (by swapping their contents into the `input.txt` file):
+
+- default.txt: The default instruction set provided in the example.
+- test_A.txt: A single line grid (1x4) where the Hoover attempts to go out of bounds and eventually returns back to its origin.
+- test_B.txt: A 2x4 grid testing that the Hoover picks up on dirt on the location it starts at.
+- test_C.txt: A larger grid where the Hoover moves around and picks up dirt, meant to test the display size on the frontend.
+- test_D.txt: A single line grid where the Hoover only attempts to move out of bounds.
 
 ## Built With
 * [Express](http://expressjs.com/) - Node.js web application framework.
