@@ -1,5 +1,6 @@
 # Hoover the imaginary robot vacuum
-A web application that navigates a imaginary robotic hoover through an imaginary room.
+A robotic vacuum emulator that is controlled by a set of instructions. Hoover naviates on a grid to collect dirt pieces. The dirt pieces are set to specific X and Y coordinates on the grid when the application starts. Using direction provided hoover moves to a new location and the location coordinates are evaluated against the dirt position. After hoover completes running the final position and total dirt pieces are displayed on the page
+
 <div align="center">
     <img src="hoover.gif" alt="screenshot of application" width="40%">
 </div>
