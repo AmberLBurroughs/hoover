@@ -1,5 +1,5 @@
 # Hoover instruction endpoint 
-A simple endpoint that returns an objet of instructions to the client.
+A simple endpoint that returns an object of instructions to the client.
 Decoupled application that uses a Node Express server and React frontend. 
 
 
