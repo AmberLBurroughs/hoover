@@ -35,13 +35,13 @@ The application is separated into two repositories with their own setup instruct
 * [view](https://github.com/AmberLBurroughs/hoover/tree/master/view)
 
 ## Improvements
-Some things I would like to improve about this application:
+Some things I would like to improve about this application, provided more time:
 * Use an API endpoint to update/change/create the instruction settings in either object form or as a file upload.
-* Send random hoover instructions each time instead of only reading from a single instruction each time.
+* Make it easier for multiple instruction sets to be read in, as opposed to modifying a single `input.txt` and restarting the application. 
 * Send cleanup cleanup result to server to be added to a file and read from.
-* Better animate the hoover to show it fully moving from position to position (as opposed to it jumping to the center of each square).
-* Properly rotating the hoover based on the direction it is attempting to move, showing when it is hitting a wall and is not moving further in a certain direction.
-* Coloring tiles which have dirt cleaned up.
+* Better animate the Hoover to show it fully moving from position to position (as opposed to it jumping to the center of each square after a timeout interval).
+* Properly rotating the Hoover based on the direction it is attempting to move, and showing when it is hitting a wall.
+* Coloring tiles that the Hoover moved over, and picked up dirt from.
 * Display more positioning and grid information on the page.
-* Allow user to clean again without having a page refresh.
-* Make application more responsive.
+* Allow the user to clean again without having a page refresh.
+* Make application more responsive for different browser widths.
