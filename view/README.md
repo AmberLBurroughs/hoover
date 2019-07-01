@@ -1,18 +1,8 @@
-# Hoover the imaginary robot vacuum
-A robotic vacuum emulator that is controlled by a set of instructions. Hoover naviates on a grid to collect dirt pieces. The dirt pieces are set to specific X and Y coordinates on the grid when the application starts. Using direction provided hoover moves to a new location and the location coordinates are evaluated against the dirt position. After hoover completes running the final position and total dirt pieces are displayed on the page.
-
-<div align="center">
-    <img src="hoover.gif" alt="screenshot of application" width="40%">
-</div>
-Decoupled application that uses a React view and Node server. 
-
-[Demo](https://hoover-demo.herokuapp.com/)
-
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
 ### Prerequisites
-What things you need installed before running this application.
+This application requires the following installed on your computer:
 
 * [NPM](https://docs.npmjs.com/cli/install)
 or
@@ -21,11 +11,9 @@ or
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
 1) Download the client repository to a local machine and open the repository in an IDE of choice.
 
-2) Install dependencies & run application
+2) Install dependencies and run application
 ```
 # Open a new shell navigate into the client directory
 $ yarn install || npm i
@@ -100,7 +88,7 @@ let hooverStyles = {
     <img src="hoover.jpg" alt="screenshot of application" width="40%">
 </div>
 
-#### Moving hoover & collecting dirt
+#### Moving hoover and collecting dirt
 To move hoover around the floor, the array of directions is iterated through.
 For each direction, the new position of hoover is determined and set.
 A time out in increments of 500ms is used to "animate" hoover's movements on the floor as the current position is updated in the loop.
@@ -112,7 +100,8 @@ for (let i = 0; i < moveCount; i++) {
     setTimeout(() => { this.setHooverPos(DIRECTIONS[i]); }, 500 * i);
 }
 ```
-the current position of hoover is evaluated each time it is set.
+
+The current position of hoover is evaluated each time it is set.
 If the current position is in the dirt position array, the totalDirt counter is  increment by +1. The that dirt position is removed from the array, so that it can not be cleaned mulitple times.
 ```
 if (dirtPos.includes(currentPosStr)) {
@@ -127,8 +116,9 @@ if (dirtPos.includes(currentPosStr)) {
     });
 }
 ```
+
 ### Finish Cleaning
-Once all the directions have be moved through. the final position of hoover and total dirts cleaned are displayed.
+Once the Hoover has gone through all of the directions, the final position of hoover and total pieces of dirt cleaned are displayed.
 ```
 {(this.props.finished) ?
     <div>
