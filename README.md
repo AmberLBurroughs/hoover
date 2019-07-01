@@ -1,4 +1,4 @@
-# Hoover the imaginary robot vacuum
+# Hoover, the imaginary robot vacuum
 A robotic vacuum emulator that is controlled by a set of instructions. Hoover naviates on a grid to collect dirt pieces. The dirt pieces are set to specific X and Y coordinates on the grid when the application starts. Using directions provided hoover moves to a new location and the location coordinates are evaluated against the dirt position. After hoover completes running the final position and total dirt pieces are displayed on the page.
 
 <div align="center">
@@ -13,9 +13,9 @@ Decoupled application that uses a React view and Node server.
 This program is split out into two services: a React client-facing application that shows the Hoover navigate through the grid, and a Node.js server that reads in the `input.txt` file and sends it to the frontend.
 
 ## Design
-I decided to create a client facing web application for this challenge because its a fun and interesting challenge but also makes testing the application a lot easier. I used React for rendering the view because this application has a lot of dynamically created/updated properties and react handles this with ease.
+I decided to create a client facing web application for this challenge because it's a fun and interesting problem, and also mmakes testing the application a lot easier when visualized. I used React for rendering the view because this application has a lot of dynamically created/updated properties.
 
-I created a server using Node and Express to handle reading the input file because it open the door to more functionality like, uploading / updating instruction files, and storing past cleaning results.
+I created a server using Node and Express to handle reading the input file because it opens the door to more functionality like uploading and updating instruction files.
 
 ## Assumptions
 The following assumptions were made:
