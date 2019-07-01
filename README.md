@@ -1,7 +1,7 @@
 # Programming challenge:
 
 ## Design
-I decided to create a client facing web application for this challenge because I thought it would be a fun and interesting challenge but also make demoing a lot easier. I used React for rendering the view because this application has a lot of dynamically created/updated properties and react handles this with ease.
+I decided to create a client facing web application for this challenge because its a fun and interesting challenge but also makes testing the application a lot easier. I used React for rendering the view because this application has a lot of dynamically created/updated properties and react handles this with ease.
 
 I created a server using Node and Express to handle reading the input file because it open the door to more functionality like, uploading / updating instruction files, and storing past cleaning results.
 
