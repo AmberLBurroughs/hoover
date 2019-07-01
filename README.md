@@ -9,9 +9,9 @@ I created a server using Node and Express to handle reading the input file becau
 While building this application I came across some interesting problems like creating the grind in a kind of cartesian/math style where were the grid start at the bottom left. I found this challenging since a normal 2d array would start at the top left. I solved this by rotating the grid by 270 degrees with CSS. Though this brought on its own challenges like setting the height and width of the floor. Calculating the "floor" height and width needed to be done dynamically because the grid dimensions change, the rotation of the grid made this task tricky.
 
 ## Configuration
-The application is seperated into two repositories:
-* server
-* view
+The application is seperated into two repositories with their own setup instructions.
+* [server](https://github.com/AmberLBurroughs/hoover/tree/master/server)
+* [view](https://github.com/AmberLBurroughs/hoover/tree/master/view)
 
 ## Improvements
 Somethings I would like to improve about this application:
