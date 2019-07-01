@@ -1,5 +1,7 @@
 # Hoover, the imaginary robot vacuum
-A robotic vacuum emulator that is controlled by a set of instructions. Hoover naviates on a grid to collect dirt pieces. The dirt pieces are set to specific X and Y coordinates on the grid when the application starts. Using directions provided hoover moves to a new location and the location coordinates are evaluated against the dirt position. After hoover completes running the final position and total dirt pieces are displayed on the page.
+A robotic vacuum emulator that is controlled by a set of instructions. The mighty Hoover naviates on a grid to collect pieces of dirt. The dirt pieces are set to specific X, Y coordinates on the grid. 
+
+Using directions provided to the Hoover, it attempts to move to a new location with each instruction. The location coordinates are evaluated against the array of dirt locations. After the Hoover completes its journey, the final position and total dirt pieces are displayed on the page.
 
 <div align="center">
     <img src="view/hoover.gif" alt="screenshot of application" width="40%">
