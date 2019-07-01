@@ -7,7 +7,7 @@ A robotic vacuum emulator that is controlled by a set of instructions. Hoover na
 
 Decoupled application that uses a React view and Node server. 
 
-[Demo](https://hoover-demo.herokuapp.com/)
+[View a demo of this application on Heroku!](https://hoover-demo.herokuapp.com/)
 
 # Programming challenge:
 This program is split out into two services: a React client-facing application that shows the Hoover navigate through the grid, and a Node.js server that reads in the `input.txt` file and sends it to the frontend.
