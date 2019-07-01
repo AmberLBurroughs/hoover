@@ -117,8 +117,8 @@ if (dirtPos.includes(currentPosStr)) {
 }
 ```
 
-### Finish Cleaning
-Once the Hoover has gone through all of the directions, the final position of hoover and total pieces of dirt cleaned are displayed.
+### Finished cleaning
+Once the Hoover has gone through all of the directions, the final position of hoover and total pieces of dirt cleaned are displayed on the page.
 ```
 {(this.props.finished) ?
     <div>
