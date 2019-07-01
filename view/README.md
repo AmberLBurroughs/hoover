@@ -5,7 +5,7 @@ A web application that navigates a imaginary robotic hoover through an imaginary
 </div>
 Decoupled application that uses a React view and Node server. 
 
-(Demo)[https://hoover-demo.herokuapp.com/]
+[Demo](https://hoover-demo.herokuapp.com/)
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
